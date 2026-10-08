@@ -8,6 +8,7 @@
 | **SRN** | PES1UG24CS371 |
 | **Lab** | Lab 4 - VibeCoding |
 | **LLM chat link** | https://claude.ai/share/b4b4d8b8-45ad-48de-ad29-02ba8489a772 |
+| **Recordings** | https://drive.google.com/drive/folders/1MHPiFwwvwwwqZTMeMqhBriLKgTkAxDMN?usp=sharing |
 
 ---
 
