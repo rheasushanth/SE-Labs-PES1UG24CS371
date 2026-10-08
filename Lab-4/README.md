@@ -36,7 +36,7 @@ build. You are expected to **analyze**, **interact with an AI
 assistant**, and **complete/fix** the game to make it fully functional
 and more interesting.
 
-### **Use an LLM (e.g. ChatGPT or Claude) as your debugging and pair-programming partner for this lab.**
+
 
 ---
 
@@ -79,7 +79,7 @@ suggestions and your critical code review.
 > through its depth. Fix the check so it's based on the hook and fish
 > actually overlapping, not just being at a similar depth.
 
-**✅ What I did:** `check_catch` now uses the existing `get_rect()`
+**What I did:** `check_catch` now uses the existing `get_rect()`
 methods and checks `hook.get_rect().colliderect(fish.get_rect())`, so
 a fish is caught only when the hook and fish actually overlap, not just
 when they are at a similar depth.
@@ -92,7 +92,7 @@ when they are at a similar depth.
 > they're visually distinguishable, and make sure the correct point
 > value is awarded when each type is caught.
 
-**✅ What I did:** Added three fish types in `GameEngine`:
+**What I did:** Added three fish types in `GameEngine`:
 
 | Type   | Speed        | Size   | Points | Color  |
 |--------|--------------|--------|--------|--------|
@@ -112,7 +112,7 @@ the surface.
 > fish. A new cast should not be able to interrupt one that's already
 > in progress.
 
-**✅ What I did:** Removed the auto-cast from `GameEngine.update()` and
+**What I did:** Removed the auto-cast from `GameEngine.update()` and
 added a `try_cast()` method that starts a cast only when the hook is
 `IDLE` and no fish is still being reeled in. In `main.py`, a
 `KEYDOWN` event for `K_SPACE` calls `try_cast()`, so pressing SPACE
@@ -126,7 +126,7 @@ during a cast does nothing.
 > clearly. Provide a way to start a new round with the score and timer
 > both reset.
 
-**✅ What I did:** Added a 30-second timer (counted in frames at 60 FPS)
+**What I did:** Added a 30-second timer (counted in frames at 60 FPS)
 shown on screen under the score. When it reaches 0, `update()` stops
 running, so no more casts or catches happen, and a
 "Time's up! Final Score: X" banner is shown. Pressing **R** after the
